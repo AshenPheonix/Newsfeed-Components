@@ -11,9 +11,7 @@ const menuButton=document.querySelector('.menu-button');
 // Using your menuButton reference, add a click handler that calls toggleMenu
 const menuUl=menu.querySelector('ul')
 
-menuButton.addEventListener('click',(e)=>{
-  toggleMenu()
-})
+menuButton.addEventListener('click',toggleMenu)
 
 menu.addEventListener('transitionstart',(e)=>{
     menuUl.classList.add('hide')

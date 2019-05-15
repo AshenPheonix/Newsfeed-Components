@@ -91,6 +91,11 @@
   padding: 0;
   margin: 15px 0 0;
 }
+@media (max-width: 600px) {
+  .article h2 {
+    font-size: 20px;
+  }
+}
 .article .date {
   margin: 0;
   font-size: 14px;
@@ -110,9 +115,20 @@
   transform: translate(-50%);
   background-color: white;
 }
+@media (max-width: 600px) {
+  .article .expandButton {
+    position: sticky;
+    bottom: -25px;
+  }
+}
 .article-open {
   transition: height 1s;
   height: 400px;
+}
+@media (max-width: 600px) {
+  .article-open {
+    overflow: scroll;
+  }
 }
 html,
 body {
