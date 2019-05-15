@@ -56,8 +56,7 @@ class ArticleBuilder{
 let articleRemote=new ArticleBuilder(dataSet[0])
 
 let articles = document.querySelectorAll('.article');
-articles.forEach(item=>{
-  console.log(item);
+articles.forEach(item=>{git 
   new Article(item)
 })
 
