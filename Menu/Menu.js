@@ -16,7 +16,6 @@ menuButton.addEventListener('click',(e)=>{
 })
 
 menu.addEventListener('transitionstart',(e)=>{
-    console.log(menuUl);
     menuUl.classList.add('hide')
 })
 menu.addEventListener('transitionend',(e)=>{
