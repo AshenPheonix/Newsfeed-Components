@@ -11,11 +11,15 @@
   height: 50px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
+  transition: height 1s;
 
   h2 {
     font-size: 28px;
     padding: 0;
     margin: 15px 0 0;
+    @media(max-width: 600px){
+      font-size: 20px;
+    }
   }
 
   .date {
@@ -29,7 +33,7 @@
     right: 10px;
   }
 
-  .expandButton {
+  .expandButton,.closeButton {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -38,11 +42,23 @@
     cursor: pointer;
     transform: translate(-50%);
     background-color: white;
+    @media(max-width: 600px){
+      position: sticky;
+      bottom:-25px;
+    }
+  }
+  .closeButton{
+    left:75%;
+    width:auto;
   }
 }
 
 .article-open {
+  transition: height 1s;
   height: 400px;
+  @media(max-width:600px){
+    overflow:scroll;
+  }
 }
 
 
